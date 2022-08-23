@@ -1,38 +1,50 @@
-\documentclass{article}
+\documentclass[11pt,a4paper]{article}
 
 \usepackage{fontawesome}
+\usepackage{geometry}
 \usepackage{titlesec}
+\usepackage{titling}
+
+\geometry{
+  a4paper,
+  left=0.5cm,
+  right=0.5cm,
+  top=0.5cm,
+  bottom=0.5cm,
+}
+
+\renewcommand{\maketitle}{
+  \begin{center}
+    {\huge\bfseries\theauthor} \\
+    \normalsize Software Engineer
+  \end{center}
+}
 
 \titleformat{\section}
-{\large\bfseries\uppercase}
+{\large\bfseries}
 {}
 {0em}
-{}
+{}[\titlerule]
+
 
 \begin{document}
+  \author{Tom Bell}
+  \maketitle
 
-\title{Tom Bell \\
-  \large Software Engineer}
-\author{}
-\date{}
+  \begin{center}
+    \small
+    \raisebox{-0.1\height}{\small\faMapMarker} Manchester, UK
+    \hspace{1cm}
+    \raisebox{-0.1\height}{\small\faMobile} +447478713163
+    \hspace{1cm}
+    \raisebox{-0.1\height}{\small\faAt} tomb@tomb.io
+    \hspace{1cm}
+    \raisebox{-0.1\height}{\small\faGithubAlt} github.com/tombell
+  \end{center}
 
-\maketitle
-
-\begin{center}
-  \small
-  \raisebox{-0.1\height}{\normalsize\faMapMarker} Manchester, UK
-  \hspace{0.2cm}
-  \raisebox{-0.1\height}{\normalsize\faMobile} +447478713163
-  \hspace{0.2cm}
-  \raisebox{-0.1\height}{\normalsize\faAt} tomb@tomb.io
-  \hspace{0.2cm}
-  \raisebox{-0.1\height}{\normalsize\faGithubAlt} github.com/tombell
-\end{center}
-
-\section{Introduction}
-\section{Experience}
-\section{Technical Skills}
-\section{Education}
-\section{Hobbies}
-
+  \section{Introduction}
+  \section{Experience}
+  \section{Technical Skills}
+  \section{Education}
+  \section{Hobbies}
 \end{document}
