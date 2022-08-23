@@ -26,13 +26,16 @@
 \titleformat{\section}
 {\large\bfseries}
 {}
-{0em}
+{0cm}
 {}
 
-\begin{document}
-  \author{Tom Bell}
-  \maketitle
+\titleformat{\subsection}[runin]
+{\small\bfseries}
+{}
+{0cm}
+{}[ ---]
 
+\begin{document}
   \begin{center}
     \small
     \raisebox{-0.1\height}{\small\faMapMarker} Manchester, UK
@@ -44,9 +47,26 @@
     \raisebox{-0.1\height}{\small\faGithubAlt} github.com/tombell
   \end{center}
 
+  \author{Tom Bell}
+  \maketitle
+
   \section{Introduction}
+  \small TODO
+
   \section{Experience}
+  \small TODO
+
   \section{Technical Skills}
+  \subsection{Languages}
+  \small JavaScript, TypeScript, Go, Ruby, Swift, Lua
+  \subsection{Environments}
+  \small Web (React, vanilla), Node (Next, vanilla), Databases (PostgreSQL, Redis), iOS (React-Native, Cordova), macOS (App, CLI), Hosting (AWS, Heroku)
+  \subsection{Other}
+  \small UNIX (Bash/ZSH, SSH, administration), Docker, Git, GitLab (CI/CD workflows), SQL
+
   \section{Education}
+  \small TODO
+
   \section{Hobbies}
+  \small TODO
 \end{document}
