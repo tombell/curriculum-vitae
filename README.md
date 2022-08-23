@@ -13,7 +13,7 @@ Homebrew.
 Some packages for TeX Live will need to be installed as well.
 
     sudo tlmgr update --self
-    sudo tlmgr install titlesec
+    sudo tlmgr install fontawesome titlesec
 
 ## Usage
 
