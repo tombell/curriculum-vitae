@@ -1,4 +1,7 @@
 all:
 	@pdflatex -halt-on-error curriculum-vitae.tex
 
-.PHONY: all
+clean:
+	@rm -f *.aux *.log *.pdf *.out
+
+.PHONY: all clean
