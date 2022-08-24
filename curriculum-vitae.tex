@@ -1,72 +1,110 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[a4paper]{article}
 
 \usepackage{fontawesome}
-\usepackage{geometry}
+\usepackage[margin=1cm]{geometry}
 \usepackage{helvet}
+\usepackage[bookmarks=false,colorlinks=true]{hyperref}
 \usepackage{titlesec}
 \usepackage{titling}
 
-\geometry{
-  a4paper,
-  left=0.5cm,
-  right=0.5cm,
-  top=0.5cm,
-  bottom=0.5cm,
-}
+\pagenumbering{gobble}
+
+\author{Tom Bell}
 
 \renewcommand{\familydefault}{\sfdefault}
 
 \renewcommand{\maketitle}{
   \begin{center}
-    {\huge\bfseries\theauthor} \\
-    \normalsize Software Engineer
+    \huge{\textbf\theauthor}
   \end{center}
 }
 
+\newcommand{\datedsubsection}[2]{
+  \subsubsection{#1 \hfill \textbf{#2}}
+}
+
+\newcommand{\languagetag}[1]{
+  \raisebox{0.3\height}{\tiny #1}
+}
+
 \titleformat{\section}
-{\large\bfseries}
+{\large}
 {}
 {0cm}
-{}
+{\textbf}
 
 \titleformat{\subsection}[runin]
-{\small\bfseries}
+{}
 {}
 {0cm}
-{}[ ---]
+{\textbf}[ --]
+
+\titleformat{\subsubsection}
+{}
+{}
+{0cm}
+{}
+
+\titleformat{\paragraph}
+{}
+{}
+{0cm}
+{}
 
 \begin{document}
-  \begin{center}
-    \small
-    \raisebox{-0.1\height}{\small\faMapMarker} Manchester, UK
-    \hspace{1cm}
-    \raisebox{-0.1\height}{\small\faMobile} +447478713163
-    \hspace{1cm}
-    \raisebox{-0.1\height}{\small\faAt} tomb@tomb.io
-    \hspace{1cm}
-    \raisebox{-0.1\height}{\small\faGithubAlt} github.com/tombell
-  \end{center}
 
-  \author{Tom Bell}
-  \maketitle
+\maketitle
 
-  \section{Introduction}
-  \small{TODO}
+\begin{center}
+  \raisebox{0\height}{\small\faMapMarker} Manchester, UK
+  \hspace{1cm}
+  \raisebox{-0.1\height}{\small\faMobile} +447478713163
+  \hspace{1cm}
+  \raisebox{-0.1\height}{\small\faAt} tomb@tomb.io
+  \hspace{1cm}
+  \raisebox{-0.1\height}{\small\faGithubAlt} github.com/tombell
+\end{center}
 
-  \section{Experience}
-  \small{TODO}
+\section{Introduction}
+\small{TODO}
 
-  \section{Technical Skills}
-  \subsection{Languages}
-  \small{JavaScript, TypeScript, Go, Ruby, Swift, Lua}
-  \subsection{Environments}
-  \small{Web (React, vanilla), Node (Next, vanilla), Databases (PostgreSQL, Redis), iOS (React-Native, Cordova), macOS (App, CLI), Hosting (AWS, Heroku)}
-  \subsection{Other}
-  \small{UNIX (Bash/ZSH, SSH, administration), Docker, Git, GitLab (CI/CD workflows), SQL}
+\section{Experience}
+\datedsubsection{\textbf{Residently} -- Software Engineer}{2019 -- Present}
+\begin{itemize}
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+\end{itemize}
+\datedsubsection{\textbf{Capsule} -- Software Developer}{2012 -- 2019}
+\begin{itemize}
+  \item \textbf{Capsule Mobile} -- built using Cordova, Backbone, and CoffeeScript (eventually converted to ES6 JavaScript). The app used the public API to synchronise data, and store it (Web SQL) so the app could work offline, and then reconcile the offline data with online data.
+  \item \textbf{Capsule for Gmail} -- built using JavaScript and the Gmail add on SDK. This made CRM  data available inside emails within Gmail, and gave the ability to store the emails in the CRM, and access to other CRM features.
+  \item \textbf{Capsule Connector for Google Data Studio} -- built using JavaScript and the data studio SDK, the connector allows Google Data Studio to pull in CRM data, which allows users to create dashboard and other data visualisations.
+  \item Worked on some internal dashboards, monitoring, and CI/CD tools.
+\end{itemize}
 
-  \section{Education}
-  \small TODO
+\section{Technical Skills}
+\subsection{Languages}
+\textit{JavaScript, TypeScript, Go, Ruby, Swift, Lua}
+\subsection{Environments}
+\textit{Web (React, vanilla JS), Node (Next, vanilla), Ruby (Rails, Sinatra), Databases (PostgreSQL, Redis), iOS (React-Native, Cordova), macOS (App, CLI), Hosting (AWS, Heroku)}
+\subsection{Other}
+\textit{Linux/UNIX (Bash/ZSH, SSH, administration), Docker, Git, GitHub (Actions), GitLab (CI/CD workflows), SQL}
 
-  \section{Hobbies}
-  \small TODO
+\section{Education}
+\datedsubsection{\textbf{Software Engineering} -- University of Central Lancashire}{2006 -- 2009}
+\textit{Diploma of Higher Education - Software Engineering}
+\datedsubsection{\textbf{Access to Higher Education} -- Boston College}{2005 -- 2006}
+\textit{Business, Computing, Mathematics}
+
+\section{Hobbies}
+\paragraph{My main hobby at the minute is DJing. I first learnt to DJ back in 2018 and have been honing and learning new skills consistently. I often perform a 1 to 2 hour mix weekly live on \href{https://twitch.tv/iamdjriff}{Twitch}.}
+\paragraph{I've built and maintained several side projects. A typical side project for me is something that helps increase productivity.}
+\begin{itemize}
+  \item \href{https://github.com/starkwm/stark}{Stark} \languagetag{(Swift)} Window manager powered by JavaScript for macOS
+  \item \href{https://github.com/tombell/skbd}{skbd} \languagetag{(Swift)} Daemon for binding shell commands to shortcut keys for macOS
+  \item \href{https://github.com/tombell/memoir}{Memoir API} \languagetag{(Go)} \href{https://github.com/tombell/memoir-app}{Memoir App} \languagetag{(TypeScript, Preact)} Web app for sharing tracklists for my DJ mixes
+  \item \href{https://github.com/tombell/legend}{Legend} \languagetag{(Go, TypeScript, Preact)} API service and web overlay for OBS for displaying the currently playing track(s) in Rekordbox
+  \item \href{https://github.com/tombell/ensong}{Ensong} \languagetag{(Go)} Deamon that watches a directory for a WAV file, converts to AIFF and MP3 to backup and upload to Mixcloud
+\end{itemize}
+\paragraph{I also like to play \href{https://magic.wizards.com/en}{Magic: the Gathering} for fun, and have previously played at a competitive level.}
+
 \end{document}
