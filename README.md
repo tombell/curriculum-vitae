@@ -8,16 +8,22 @@ curriculum vitae.
 Generating the curriculum vitae requires `pdflatex`, which can be installed via
 Homebrew.
 
-    brew install basictex
+```
+brew install basictex
+```
 
 Some packages for TeX Live will need to be installed as well.
 
-    sudo tlmgr update --self
-    sudo tlmgr install fontawesome titlesec
+```
+sudo tlmgr update --self
+sudo tlmgr install collection-fontsrecommend fontawesome titlesec titling
+```
 
 ## Usage
 
 Once everything is installed, the PDF can be generated.
 
-    make
-    open curriculum-vitae.pdf
+```
+make
+open curriculum-vitae.pdf
+```
