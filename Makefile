@@ -1,7 +1,10 @@
-all:
+build:
 	@pdflatex -halt-on-error curriculum-vitae.tex
+
+watch:
+	@ls *.tex | entr -r make build
 
 clean:
 	@rm -f *.aux *.log *.pdf *.out
 
-.PHONY: all clean
+.PHONY: build watch clean
