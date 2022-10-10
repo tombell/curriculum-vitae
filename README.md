@@ -9,14 +9,7 @@ Generating the curriculum vitae requires `pdflatex`, which can be installed via
 Homebrew.
 
 ```
-brew install basictex
-```
-
-Some packages for TeX Live will need to be installed as well.
-
-```
-sudo tlmgr update --self
-sudo tlmgr install collection-fontsrecommend fontawesome titlesec titling
+brew install mactex-no-guid
 ```
 
 ## Usage
