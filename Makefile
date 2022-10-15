@@ -1,5 +1,5 @@
 build:
-	@pdflatex -halt-on-error curriculum-vitae.tex
+	@pdflatex -halt-on-error -jobname tom-bell curriculum-vitae.tex
 
 watch:
 	@ls *.tex | entr -r make build
