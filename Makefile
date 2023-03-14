@@ -7,4 +7,5 @@ watch:
 clean:
 	@rm -f *.aux *.log *.pdf *.out
 
+.DEFAULT_GOAL := build
 .PHONY: build watch clean
