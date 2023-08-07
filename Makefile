@@ -1,11 +1,11 @@
 build:
-	@pdflatex -halt-on-error -jobname tom-bell curriculum-vitae.tex
+	@tectonic -X build
 
 watch:
-	@ls *.tex | entr -r make build
+	@tectonic -X watch
 
 clean:
-	@rm -f *.aux *.log *.pdf *.out
+	@rm -f build
 
 .DEFAULT_GOAL := build
 .PHONY: build watch clean
