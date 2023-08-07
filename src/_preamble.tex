@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+
+\usepackage{fontawesome}
+\usepackage[margin=1 cm]{geometry}
+\usepackage{helvet}
+\usepackage[bookmarks=false,colorlinks=true]{hyperref}
+\usepackage{titlesec}
+\usepackage{titling}
+
+\thispagestyle{empty}
+
+\author{Tom Bell}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\maketitle}{
+  \begin{center}
+    \huge{\textbf\theauthor}
+  \end{center}
+}
+
+\newcommand{\datedsubsection}[2]{
+  \subsubsection{#1 \hfill \textbf{#2}}
+}
+
+\newcommand{\languagetag}[1]{
+  \raisebox{0.3\height}{\tiny #1}
+}
+
+\titleformat{\section}
+{\large\uppercase}
+{}
+{0 cm}
+{\textbf}
+
+\titleformat{\subsection}[runin]
+{}
+{}
+{0 cm}
+{\textbf}
+
+\titleformat{\subsubsection}
+{}
+{}
+{0 cm}
+{}
+
+\titleformat{\paragraph}
+{}
+{}
+{0 cm}
+{}
+
+\begin{document}
