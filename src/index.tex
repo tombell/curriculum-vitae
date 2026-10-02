@@ -1,72 +1,83 @@
 \maketitle
 
 \begin{center}
-    \contactitem{0\height}{\faMapMarker}{Manchester, United Kingdom}
-    \hspace{1 cm}
-    \contactitem{-0.1\height}{\faEnvelope}{tomb@tombell.dev}
-    \hspace{1 cm}
-    \contactitem{-0.1\height}{\faGithubAlt}{github.com/tombell}
+    \small
+    \mbox{\contactitem{0\height}{\faMapMarker}{Manchester, United Kingdom}}
+    \hspace{0.2 cm}
+    \mbox{\contactitem{-0.1\height}{\faEnvelope}{\href{mailto:tomb@tombell.dev}{tomb@tombell.dev}}}
+    \hspace{0.2 cm}
+    \mbox{\contactitem{-0.1\height}{\faGithubAlt}{\href{https://github.com/tombell}{github.com/tombell}}}
+    \hspace{0.2 cm}
+    \mbox{\contactitem{-0.1\height}{\faLinkedin}{\href{https://linkedin.com/in/thetombell}{linkedin.com/in/thetombell}}}
 \end{center}
 
-\section{Introduction}
-\paragraph{I've been coding since the late 90s starting with BASIC on a Commodore 64. From then, I've been passionate about programming and have learned several languages from Ruby, Go, to modern JavaScript/TypeScript. Also dabbling with Swift for personal projects.}
-
-\paragraph{I've gained experience developing desktop, mobile, distributed, and web applications. As a full-stack developer, I specialize in TypeScript for front end development, and Ruby/Go for the back-end. Beyond my professional work, I've also created several productivity tools for macOS, and related to my hobby as a DJ.}
+\section{Profile}
+I'm a senior full-stack software engineer with over 14 years of professional experience. My main stack is Ruby on Rails and React with TypeScript. I've owned features from design through deployment and built APIs, third-party integrations and customer-facing applications. I've also mentored junior engineers and established shared engineering conventions. Outside work, I build macOS applications and tools in Swift.
 
 \section{Experience}
-
-\datedsubsection{\textbf{Supercycle} Founding Software Engineer}{Mar 2026---Oct 2026}
+\datedsubsection{\textbf{Supercycle} Founding Software Engineer}{Mar 2026--Oct 2026}
 \begin{itemize}
-    \item Designed, built, and launched the Model Context Protocol (MCP) integration within the existing Rails application, enabling merchants to manage their Supercycle commerce data through AI tools.
-    \item Developed an electronic signature solution, enabling merchants to create customer contracts and collect signatures.
-    \item Implemented customer identity verification, allowing merchants to verify customers' identities.
+    \item Designed, built and deployed an MCP integration within the Rails application. Merchants used it daily to manage inventory through AI assistants and could also check booking availability and manage returns.
+    \item Implemented OAuth authentication and access controls so merchants could access only their own shop's data.
+    \item Owned an electronic signature feature from design through deployment. Built Liquid contract templating and HTML-to-PDF generation, and integrated Firma signing within the Shopify app.
+    \item Added contract generation for Shopify draft orders after merchant feedback, so merchants could generate contracts before checkout.
+    \item Built a post-checkout identity verification flow. Displayed verification status against customers and orders in the Shopify app and Shopify admin so merchants could check it before fulfilment.
 \end{itemize}
 
-\datedsubsection{\textbf{Residently} Senior Software Engineer}{Aug 2019---Mar 2026}
+\datedsubsection{\textbf{Residently} Senior Software Engineer}{Aug 2019--Mar 2026}
 \begin{itemize}
-    \item Built the integrations feature for building integrations with third party systems.
-    \item Developed and deployed multiple Ruby on Rails API apps for various stages of the rental process.
-    \item Started resident and partner facing dashbaords built with Next.js using the internal JSON:API.
-    \item Contributed to React-Native mobile app development for a resident focused app.
-    \item Established a system for documenting our engineering conventions, covering things from building, testing, service objects, mocking, and code reviews.
-    \item Implemented a system for processing incoming and outgoing emails for residents implementing our customer support channel in our mobile app.
-    \item Provided mentoring to junior engineers on topics such as Ruby, Rails, RSpec, TypeScript, Jest, and refactoring.
-    \item Collaborated closely with our product managers and designers.
+    \item Worked with designers to build a Next.js partner dashboard for self-service rental management. Implemented the design system and extended Rails APIs for the frontend.
+    \item Helped replace the legacy resident paperwork application. Used reusable React component patterns and type-safe SWR modules for API requests.
+    \item Built a shared platform for third-party integrations, with HTTP and SOAP/XML clients, global and per-instance configuration, and background synchronisation patterns. First used it to synchronise Reapit property data and resident charges. Every third-party integration later used the platform.
+    \item Developed features and fixes across Rails APIs for viewing bookings, rental applications, referencing integrations and property manager data for the resident app.
+    \item Built incoming and outgoing support email systems from scratch with another engineer. These routed conversations to lettings agents, property managers or Residently support. Helped build the accompanying React Native chat interface.
+    \item Established shared engineering conventions for Rails APIs, service object architecture, frontend development and testing. The team adopted the documentation and contributed further conventions.
+    \item Mentored junior engineers through pair programming and pull request reviews, and onboarded new team members.
+    \item Built a Go service to scale Heroku dynos up and down on a daily schedule.
 \end{itemize}
 
-\datedsubsection{\textbf{Capsule} Software Developer}{Jan 2012---Aug 2019}
+\newpage
+
+\datedsubsection{\textbf{Capsule} Software Developer}{Jan 2012--Aug 2019}
 \begin{itemize}
-    \item \textbf{Capsule Mobile:} Developed using Cordova, Backbone, and CoffeeScript. This app utilized a public API to synchronize and store data offline (Web SQL), later reconciling it with online data.
-    \item \textbf{Capsule for Gmail:} Created using JavaScript and the Gmail add-on SDK, enabling CRM data integration within Gmail emails. Users could store emails in the CRM and access additional CRM features.
-    \item \textbf{Capsule Connector for Google Data Studio:} Developed with JavaScript and the Data Studio SDK, enabling Google Data Studio to pull in CRM data for creating dashboards and visualizations.
-    \item Built internal dashboards, monitoring tools, and CI/CD pipelines.
+    \item Built Capsule Mobile from scratch with Cordova, CoffeeScript and Backbone.js, starting from a CTO prototype.
+    \item Implemented offline storage and synchronisation to reconcile local changes with online records when users reconnected.
+    \item Built Capsule for Gmail from scratch. Users could save emails to Capsule and access CRM information within Gmail.
+    \item Owned and built Capsule's Google Data Studio connector from scratch. Users could create dashboards and visualisations from their CRM data.
+    \item Built an internal dashboard showing issues and customer request counts, and wrote Go tools to generate release changelogs.
 \end{itemize}
 
-\section{Skills}
+\section{Core skills}
+\subsection{Backend:} Ruby, Rails, Go, API development, third-party integrations.
 
-\subsection{Languages:} JavaScript, TypeScript, Go, Ruby, Swift, Lua, and some other languages.
+\subsection{Frontend:} TypeScript, JavaScript, React, Next.js, SWR, reusable components.
 
-\subsection{Environments:} React/Preact, Node/Bun, Ruby (Rails), Databases (PostgreSQL, Redis), iOS (React Native), macOS (App, CLI), Hosting (AWS, Digital Ocean, Heroku)
+\subsection{Data:} PostgreSQL; Redis for caching, rate limiting and background jobs.
 
-\subsection{Other:} Linux (Shell, SSH, administration), Docker, Git, GitHub (Actions), GitLab (CI/CD workflows), SQL, Testing
+\subsection{Testing:} RSpec, Minitest, Jest, Cypress; Vitest and Bun for personal projects.
+
+\subsection{Delivery:} Git, GitLab CI, GitHub Actions, Docker, Linux.
+
+\subsection{Cloud services:} AWS S3, Heroku, Railway; DigitalOcean for personal project hosting.
+
+\subsection{Additional experience:} Swift, macOS applications and tools, React Native.
+
+\section{Selected projects}
+\subsubsection{\textbf{StarkWM} Swift tools for macOS}
+\begin{itemize}
+    \item Built \href{https://github.com/starkwm/swm}{swm}, a window manager that uses Apple's private APIs. Tracked process, application and window state through system events and notifications.
+    \item Built \href{https://github.com/starkwm/skbd}{skbd}, a keyboard shortcut daemon, including a lexer and parser for its custom configuration format.
+    \item Built \href{https://github.com/starkwm/sbar}{sbar}, a configurable macOS status bar with native system integrations, live configuration reloads and a JSON protocol for external process plugins.
+\end{itemize}
+
+\subsubsection{\textbf{\href{https://github.com/conjuror-app/conjuror}{Conjuror}} Swift app launcher for macOS}
+\begin{itemize}
+    \item Built an app launcher with AI-assisted development. Compared implementations to investigate memory use and application size, using runtime monitoring and manual feature testing.
+\end{itemize}
 
 \section{Education}
+\datedsubsection{\textbf{Diploma of Higher Education in Software Engineering}}{2006--2009}
+University of Central Lancashire
 
-\datedsubsection{\textbf{Software Engineering} University of Central Lancashire}{2006---2009}
-\textit{Diploma of Higher Education Software Engineering}
-
-\datedsubsection{\textbf{Access to Higher Education} Boston College}{2005---2006}
-\textit{Business, Computing, Mathematics}
-
-\section{Hobbies}
-\paragraph{My main hobby is DJing. I began DJing in 2018 and continue to refine my skills, often performing live streams once or twice a month on Twitch. I also enjoy playing board games/tabletop games, attending a weekly board games night with friends.}
-
-\paragraph{Typically I use side projects as a way to keep up my skills and learn new technologies and techniques. My favourite side projects are my productivity boosting tools like Stark and skbd.}
-
-\begin{itemize}
-    \item \href{https://github.com/conjuror-app/conjuror}{Conjuror}: Minimal opionated app launcher for macOS, designed for low memory footprint.\textit{Swift}
-    \item \href{https://github.com/starkwm/skbd}{skbd}: Keyboard shortcut daemon for macOS.\textit{Swift}
-    \item \href{https://github.com/starkwm/swm}{swm}: Window manager with optional automatic tiling for macOS.\textit{Swift}
-    \item \href{https://github.com/starkwm/sbar}{sbar}: Customisable bar for macOS.\textit{Swift}
-    \item \href{https://github.com/starkwm/stark}{stark}: macOS window manager powered by JavaScript. \textit{Swift}
-\end{itemize}
+\section{Interests}
+DJing, including live streams on Twitch, and a weekly board games group.

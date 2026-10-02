@@ -1,14 +1,17 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage{fontawesome}
-\usepackage[margin=1 cm]{geometry}
+\usepackage[margin=1.5 cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
-\usepackage[bookmarks=false,colorlinks=true]{hyperref}
+\usepackage[bookmarks=false,colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
 \usepackage{titlesec}
 \usepackage{titling}
 
-\thispagestyle{empty}
+\pagestyle{plain}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
 
 \author{Tom Bell}
 
@@ -51,5 +54,9 @@
 {}
 {0 cm}
 {}
+
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{3pt}{6pt}
+\titlespacing*{\subsubsection}{0pt}{10pt}{4pt}
 
 \begin{document}
