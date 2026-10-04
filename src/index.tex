@@ -2,56 +2,53 @@
 
 \begin{center}
     \small
-    \mbox{Manchester, United Kingdom}
-    \hspace{0.5 cm}
-    \mbox{\href{mailto:tomb@tombell.dev}{tomb@tombell.dev}}
-    \hspace{0.5 cm}
-    \mbox{\href{tel:+447478713163}{+44 7478 713163}}\\[3pt]
-    \mbox{\href{https://github.com/tombell}{github.com/tombell}}
-    \hspace{0.5 cm}
-    \mbox{\href{https://linkedin.com/in/thetombell}{linkedin.com/in/thetombell}}
+    Manchester, United Kingdom
+    \enspace\textbar{}\enspace
+    \href{mailto:tomb@tombell.dev}{tomb@tombell.dev}
+    \enspace\textbar{}\enspace
+    \href{tel:+447478713163}{+44 7478 713163}\\[3pt]
+    \href{https://github.com/tombell}{github.com/tombell}
+    \enspace\textbar{}\enspace
+    \href{https://linkedin.com/in/thetombell}{linkedin.com/in/thetombell}
 \end{center}
 
 \section{Profile}
-I'm a senior full-stack software engineer with over 14 years of professional experience. My main stack is Ruby on Rails and React with TypeScript. I've owned features from design through deployment and built APIs, third-party integrations and customer-facing applications. I've also mentored junior engineers and established shared engineering conventions. Outside work, I build macOS applications and tools in Swift.
+Senior full-stack software engineer with over 14 years of professional experience, primarily using Ruby on Rails, React and TypeScript. Experience spans customer-facing applications, APIs and third-party integrations, with responsibility from design through deployment. Contributions include shared integration architecture, team-adopted engineering conventions and mentoring junior engineers.
 
 \section{Experience}
-\datedsubsection{\textbf{Supercycle} Founding Software Engineer}{Mar 2026--Oct 2026}
+\datedsubsection{\textbf{Supercycle} \textbar{} Founding Software Engineer}{Mar 2026--Oct 2026}
 \begin{itemize}
-    \item Designed, built and deployed an MCP integration within the Ruby on Rails application. Merchants used it daily to manage inventory through AI assistants and could also check booking availability and manage returns.
-    \item Implemented OAuth authentication and access controls so merchants could access only their own shop's data.
-    \item Owned an electronic signature feature from design through deployment. Built Liquid contract templating and HTML-to-PDF generation, and integrated Firma signing within the Shopify app.
-    \item Added contract generation for Shopify draft orders after merchant feedback, so merchants could generate contracts before checkout.
-    \item Built a post-checkout identity verification flow. Displayed verification status against customers and orders in the Shopify app and Shopify admin so merchants could check it before fulfilment.
+    \item Delivered a Model Context Protocol (MCP) integration in the Ruby on Rails application, used daily by merchants to manage inventory through AI assistants, with support for booking availability and returns. OAuth authentication and shop-level access controls restricted access to each merchant's own data.
+    \item Delivered electronic signatures within the Shopify app from design through deployment, using Liquid contract templates, HTML-to-PDF generation and Firma integration. Extended contract generation to draft orders following merchant feedback, allowing contracts to be generated before checkout.
+    \item Developed a post-checkout identity verification flow, with customer and order verification status in the Shopify app and Shopify admin so merchants could check it before fulfilment.
 \end{itemize}
 
-\datedsubsection{\textbf{Residently} Senior Software Engineer}{Aug 2019--Mar 2026}
+\datedsubsection{\textbf{Residently} \textbar{} Senior Software Engineer}{Aug 2019--Mar 2026}
 \begin{itemize}
-    \item Worked with designers to build a Next.js partner dashboard for self-service rental management. Implemented the design system and extended Ruby on Rails APIs for the frontend.
-    \item Helped replace the legacy resident paperwork application. Used reusable React component patterns and type-safe SWR modules for API requests.
-    \item Built a shared platform for third-party integrations, with HTTP and SOAP/XML clients, global and per-instance configuration, and background synchronisation patterns. First used it to synchronise Reapit property data and resident charges. Every third-party integration later used the platform.
-    \item Developed features and fixes across Ruby on Rails APIs for viewing bookings, rental applications, referencing integrations and property manager data for the resident app.
-    \item Built incoming and outgoing support email systems from scratch with another engineer. These routed conversations to lettings agents, property managers or Residently support. Helped build the accompanying React Native chat interface.
-    \item Established shared engineering conventions for Ruby on Rails APIs, service object architecture, frontend development and testing. The team adopted the documentation and contributed further conventions.
+    \item Developed a shared integration platform adopted for all subsequent third-party integrations, initially supporting Reapit property data and resident charges. The platform provided reusable HTTP and SOAP/XML clients, global and per-instance configuration, and background synchronisation patterns.
+    \item Established team-adopted conventions for Rails APIs, service objects, frontend development and testing, with documentation subsequently extended by other engineers.
+    \item Delivered a Next.js partner dashboard for self-service rental management in collaboration with designers, implementing the design system and extending the supporting Ruby on Rails APIs.
     \item Mentored junior engineers through pair programming and pull request reviews, and onboarded new team members.
-    \item Built a Go service to scale Heroku dynos up and down on a daily schedule.
+    \item Helped replace the legacy resident paperwork application using reusable React component patterns and type-safe SWR modules for API requests.
+    \item Extended and maintained Ruby on Rails APIs for viewing bookings, rental applications, referencing integrations and property manager data for the resident app.
+    \item Developed incoming and outgoing support email systems with another engineer, routing conversations to lettings agents, property managers or Residently support. Contributed to the accompanying React Native chat interface.
+    \item Created a Go service to scale Heroku dynos up and down on a daily schedule.
 \end{itemize}
 
 \newpage
 
-\datedsubsection{\textbf{Capsule} Software Developer}{Jan 2012--Aug 2019}
+\datedsubsection{\textbf{Capsule} \textbar{} Software Developer}{Jan 2012--Aug 2019}
 \begin{itemize}
-    \item Built Capsule Mobile from scratch with Cordova, CoffeeScript and Backbone.js, starting from a CTO prototype.
-    \item Implemented offline storage and synchronisation to reconcile local changes with online records when users reconnected.
-    \item Built Capsule for Gmail from scratch. Users could save emails to Capsule and access CRM information within Gmail.
-    \item Owned and built Capsule's Google Data Studio connector from scratch. Users could create dashboards and visualisations from their CRM data.
-    \item Built an internal dashboard showing issues and customer request counts, and wrote Go tools to generate release changelogs.
+    \item Developed Capsule Mobile from a CTO prototype using Cordova, CoffeeScript and Backbone.js, including offline storage and synchronisation to reconcile local changes with online records when users reconnected.
+    \item Delivered Capsule's Google Data Studio connector, enabling users to create dashboards and visualisations from their CRM data.
+    \item Developed Capsule for Gmail, allowing users to save emails to Capsule and access CRM information within Gmail.
+    \item Created an internal dashboard showing issues and customer request counts, and wrote Go tools to generate release changelogs.
 \end{itemize}
 
-\section{Core skills}
+\section{Skills}
 \subsection{Backend:} Ruby, Ruby on Rails, Go, API development, third-party integrations.
 
-\subsection{Frontend:} TypeScript, JavaScript, React, State management (Context, Nanostores), Next.js, SWR
+\subsection{Frontend:} TypeScript, JavaScript, React, state management (Context, Nanostores), Next.js, SWR.
 
 \subsection{Data:} PostgreSQL, Redis for caching, rate limiting and background jobs.
 
@@ -66,14 +63,14 @@ I'm a senior full-stack software engineer with over 14 years of professional exp
 \section{Selected projects}
 \subsubsection{\textbf{StarkWM} Swift tools for macOS}
 \begin{itemize}
-    \item Built \href{https://github.com/starkwm/swm}{swm}, a window manager that uses Apple's private APIs. Tracked process, application and window state through system events and notifications.
-    \item Built \href{https://github.com/starkwm/skbd}{skbd}, a keyboard shortcut daemon, including a lexer and parser for its custom configuration format.
+    \item Developed \href{https://github.com/starkwm/swm}{swm}, a window manager that uses Apple's private APIs. Tracked process, application and window state through system events and notifications.
+    \item Created \href{https://github.com/starkwm/skbd}{skbd}, a keyboard shortcut daemon, including a lexer and parser for its custom configuration format.
     \item Built \href{https://github.com/starkwm/sbar}{sbar}, a configurable macOS status bar with native system integrations, live configuration reloads and a JSON protocol for external process plugins.
 \end{itemize}
 
 \subsubsection{\textbf{\href{https://github.com/conjuror-app/conjuror}{Conjuror}} Swift app launcher for macOS}
 \begin{itemize}
-    \item Built an app launcher with AI-assisted development. Compared implementations to investigate memory use and application size, using runtime monitoring and manual feature testing.
+    \item Developed an app launcher with AI-assisted development. Compared implementations to investigate memory use and application size, using runtime monitoring and manual feature testing.
 \end{itemize}
 
 \section{Education}

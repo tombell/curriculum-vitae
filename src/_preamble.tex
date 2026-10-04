@@ -1,8 +1,16 @@
 \documentclass[a4paper,11pt]{article}
 
 \usepackage[margin=1.5 cm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{helvet}
+\usepackage{fontspec}
+% Keep words and characters distinct when extracting PDF text.
+\setsansfont{texgyreheros-regular.otf}[
+  BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,
+  BoldItalicFont=texgyreheros-bolditalic.otf,
+  Ligatures=NoCommon,
+  Kerning=Off,
+  WordSpace={1.1,0,0}
+]
 \usepackage[bookmarks=false,colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
 \usepackage{titlesec}
 \usepackage{titling}
@@ -23,7 +31,7 @@
 }
 
 \newcommand{\datedsubsection}[2]{
-  \subsubsection{#1 \hfill \textbf{#2}}
+  \subsubsection{#1\\[2pt]#2}
 }
 
 \titleformat{\section}
